@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: rem(20px);
+  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
+  background-color: var(--default-am-green);
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  width: inherit;
+  padding-top: var(--mantine-spacing-sm);
+  padding-bottom: var(--mantine-spacing-sm);
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-direction: column;
+  }
+}
+
+.links {
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin-top: var(--mantine-spacing-md);
+  }
+
+  gap: var(--mantine-spacing-xs);
+}
+
+.image {
+  height: rem(40px);
+  width: rem(70px);
+  width: auto;
+  margin-right: rem(10px);
+}
+
+.apiHealth {
+  border: 1px solid white;
+  border-radius: var(--mantine-radius-sm);
+  padding: rem(2px) rem(5px);
+  color: white;
+}
+
+.healthy {
+  background-color: green;
+}
+
+.unhealthy {
+  background-color: red;
+}
